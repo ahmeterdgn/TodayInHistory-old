@@ -1,10 +1,26 @@
-    var d = new Date(),
-    days = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'],
+ var d = new Date(),
+    days = [ 'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'],
     day = days[d.getDay()],
-    months = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"],
+    months = ['January',
+'February',
+'March',
+'April',
+'May',
+'June',
+'July',
+'August',
+'September',
+'October',
+'November',
+'December'],
     month = months[d.getMonth()],
     date = d.getDate()
     var timestamp = day+', '+month+' '+date;
     
     document.getElementById("datetime").innerHTML=timestamp;
-

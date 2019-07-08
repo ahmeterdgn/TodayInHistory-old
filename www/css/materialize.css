@@ -4282,7 +4282,7 @@ table span.badge {
 
 nav {
   color: #fff;
-  background-color: #212833;
+  background-color: rgba(000, 000, 000, 0.8);;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -4915,7 +4915,7 @@ small {
 
 .card .card-action {
   background-color: inherit;
-  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  border-top: 1px solid rgba(160, 160, 160, 0.7);
   position: relative;
   padding: 16px 24px;
 }
@@ -4925,7 +4925,7 @@ small {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-  color: #ffab40;
+  color: red;
   margin-right: 24px;
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
@@ -4933,7 +4933,7 @@ small {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
-  color: #ffd8a6;
+  color: black;
 }
 
 .card .card-reveal {
@@ -5086,7 +5086,7 @@ small {
 }
 
 .tabs .tab a {
-  color: rgba(238, 110, 115, 0.7);
+  color: black;
   display: block;
   width: 100%;
   height: 100%;
@@ -5099,13 +5099,13 @@ small {
 }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
-  background-color: rgba(246, 178, 181, 0.2);
-  outline: none;
+  background-color: rgba(000, 000, 000, 0.2);
+  outline: rgba(250, 250, 250, 0.4);
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
   background-color: transparent;
-  color: #ee6e73;
+  color: red;
 }
 
 .tabs .tab.disabled a,
@@ -5919,7 +5919,7 @@ body.keyboard-focused .dropdown-content li:focus {
 
 .sidenav .collapsible-header:hover,
 .sidenav.fixed .collapsible-header:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(000, 000, 000, 0.9);
 }
 
 .sidenav .collapsible-header i,

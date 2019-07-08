@@ -14,17 +14,6 @@
     
   <nav>
   <a href="#!" class="brand-logo" style="font-size: 25px;" >Today In History</a>
-  <!-- <ul id="slide-out" class="sidenav">
-      <img src="https://picsum.photos/300/300/?random">
-      <li><a href="index.html"><i class="fas fa-home fa-lg"></i> Events</a></li>
-      <li><a href="haber.html"><i class="fas fa-clock fa-lg"></i> Birthdays</a></li>
-      <li><a href="sec.html"><i class="fas fa-hand-pointer fa-lg"></i>Death days</a></li>
-      <li><a href="borsa.html"><i class="fas fa-lira-sign fa-lg"></i> Borsa</a></li>
-      <li><a href="hava.html"><i class="fas fa-cloud-sun fa-lg"></i> Hava Durumu</a></li>
-
-    </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars fa-2x"></i></a>  -->
-
     </nav>
  <ul id="tabs-swipe-demo" class="tabs">
     <li class="tab col s3" ><a href="#test-swipe-1" id="Events">Events</a></li>
@@ -32,39 +21,36 @@
     <li class="tab col s3" ><a href="#test-swipe-3" id="Death">Death</a></li>
   </ul>
 
-            <h3 id="datetime"></h3>
-            <div class="tarih">
+            <div style="padding-left: 10px;">
+           <h5 id="datetime"></h5>
+            </div>
+  <div>
+
+    </div>
+ <div class="overlay">
+  <div class="overlayDoor"></div>
+  <div class="overlayContent">
+    <div class="loader">
+      <div class="inner"></div>
+    </div>
+  </div>
+</div>            <div class="tarih">
               
             </div>
 
-
-<!--          <script type="text/javascript" src="cordova.js"></script>-->
+          
+      <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/materialize.js"></script>
         <script type="text/javascript" src="js/api.js"></script>
+        <script type="text/javascript" src="js/date.js"></script>
         <script type="text/javascript" src="js/all.js"></script>
         <script type="text/javascript" src="js/https.js"></script>
 
 <script type="text/javascript">
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
-
-  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
-  // var collapsibleElem = document.querySelector('.collapsible');
-  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
         
 var instance = M.Tabs.init(el, options);
 
-  // Or with jQuery
 
   $(document).ready(function(){
     $('.tabs').tabs();
