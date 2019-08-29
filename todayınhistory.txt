@@ -1,0 +1,45 @@
+$ keytool -genkey -v -keystore TodayInHistory.keystore -alias todayinhistory -keyalg RSA -keysize 2048 -validity 10000
+Enter keystore password:  todayf4med
+Re-enter new password: todayf4med
+What is your first and last name?
+  [Unknown]:  Ahmet
+What is the name of your organizational unit?
+  [Unknown]:  F4med
+What is the name of your organization?
+  [Unknown]:  F4med
+What is the name of your City or Locality?
+  [Unknown]:  Turkey
+What is the name of your State or Province?
+  [Unknown]:  Istanbul
+What is the two-letter country code for this unit?
+  [Unknown]:  TR
+Is CN=Ahmet, OU=F4med, O=F4med, L=Turkey, ST=Istanbul, C=TR correct?
+  [no]:  yes
+
+Generating 2.048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 10.000 days
+        for: CN=Ahmet, OU=F4med, O=F4med, L=Turkey, ST=Istanbul, C=TR
+Enter key password for <todayinhistory>
+        (RETURN if same as keystore password):  todayf4med
+Re-enter new password: todayf4med
+[Storing TodayInHistory.keystore]
+
+
+hata alýndý.
+
+
+
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore TodayInHistory.keystore platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk todayinhistory
+
+
+
+
+
+
+
+
+
+
+
+
+

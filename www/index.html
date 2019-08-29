@@ -6,55 +6,54 @@
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/materialize.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <title>TodayInHistory</title>
 
     </head>
-    <body>
-    
-  <nav>
-  <a href="#!" class="brand-logo" style="font-size: 25px;" >Today In History</a>
-    </nav>
- <ul id="tabs-swipe-demo" class="tabs">
-    <li class="tab col s3" ><a href="#test-swipe-1" id="Events">Events</a></li>
-    <li class="tab col s3" ><a href="#test-swipe-2" id="Birthdays">Birthdays</a></li>
-    <li class="tab col s3" ><a href="#test-swipe-3" id="Death">Death</a></li>
-  </ul>
- <div style="padding-left: 10px;">
-           <h5 id="datetime"></h5>
-            </div>
-  <div>
+    <style type="text/css">
+      *{
+        background-color: black;
+      }
+      .center img{
+background: black;
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+}
+    </style>
+    <body >
 
-    </div>
- <div class="overlay">
-  <div class="overlayDoor"></div>
-  <div class="overlayContent">
-    <div class="loader">
-      <div class="inner"></div>
-    </div>
-  </div>
-</div>            <div class="tarih">
-              
-            </div>
+<div class="center">
+  
+      <img src="img/f4.jpg" class="img-fluid">
 
-          
-      <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/materialize.js"></script>
-        <script type="text/javascript" src="js/api.js"></script>
-        <script type="text/javascript" src="js/date.js"></script>
-        <script type="text/javascript" src="js/all.js"></script>
-        <script type="text/javascript" src="js/https.js"></script>
 
-<script type="text/javascript">
+
+</div>
+
+
+
+  
+  <script type="text/javascript">
+      setTimeout(function() {
         
-var instance = M.Tabs.init(el, options);
+window.location.href = 'en.html';
 
 
-  $(document).ready(function(){
-    $('.tabs').tabs();
-  });
-        
-</script>
+              },2000)
+
+
+  </script>
+
+
+
+
     </body>
 </html>

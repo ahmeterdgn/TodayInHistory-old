@@ -8,8 +8,8 @@ $(document).ready(function(){
       var items = [];
       for (var i = data.data.Events.length - 1; i >= 0; i--) {
           items.push("<div class='col s12 '><div class='card horizontal'><div class='card-stacked'><div class='card-content'>"+
-          "<p><h4>"+data.data.Events[i].year+"</h4>"+ data.data.Events[i].text +"</p></div><div class='card-action'>"+
-         "<a href='#' class='right' onclick=\"window.plugins.socialsharing.share('"+data.data.Events[i].year , data.data.Events[i].text+"');\"><i class='far fa-share-square fa-2x'></i></a>"+
+          "<p>"+data.data.Events[i].year+"-"+ data.data.Events[i].text +"</p></div><div class='card-action'>"+
+         "<a href='#' class='right' onclick=\"window.plugins.socialsharing.share('"+data.data.Events[i].year , data.data.Events[i].text+"');\"><i class='far fa-share-square'></i></a>"+
          "</div></div></div></div>"
          );
       }
@@ -37,9 +37,9 @@ $('#Events').click(function(){
       var items = [];
       for (var i = data.data.Events.length - 1; i >= 0; i--) {
                items.push("<div class='col s12 '><div class='card horizontal'><div class='card-stacked'><div class='card-content'>"+
-          "<p><h4>"+data.data.Events[i].year+"</h4>"+ data.data.Events[i].text +"</p></div><div class='card-action'>"+
-         "<a href='#' class='right' onclick=\"window.plugins.socialsharing.share('"+data.data.Events[i].year , data.data.Events[i].text+"');\"><i class='far fa-share-square fa-2x'></i></a>"+
-         "</div></div></div></div>"
+          "<p>"+data.data.Events[i].year+"-"+ data.data.Events[i].text +"</p></div>"+
+         "<a href='#' class='right' onclick=\"window.plugins.socialsharing.share('"+data.data.Events[i].year , data.data.Events[i].text+"');\"><i class='far fa-share-square'></i></a>"+
+         "</div></div></div>"
          );
 
       }
@@ -65,8 +65,8 @@ $(".overlay").show();
       var items = [];
       for (var i = data.data.Births.length - 1; i >= 0; i--) {
                items.push("<div class='col s12 '><div class='card horizontal'><div class='card-stacked'><div class='card-content'>"+
-          "<p><h4>"+data.data.Births[i].year+"</h4>"+ data.data.Births[i].text +"</p></div><div class='card-action'>"+
-         "<a href='#' class='right ' onclick=\"window.plugins.socialsharing.share('"+data.data.Births[i].year , data.data.Births[i].text+"');\"><i class='far fa-share-square fa-2x'></i></a>"+
+          "<p>"+data.data.Births[i].year+"-"+ data.data.Births[i].text +"</p></div><div class='card-action'>"+
+         "<a href='#' class='right ' onclick=\"window.plugins.socialsharing.share('"+data.data.Births[i].year , data.data.Births[i].text+"');\"><i class='far fa-share-square'></i></a>"+
          "</div></div></div></div>"
          );
      
@@ -91,8 +91,8 @@ $(".overlay").show();
       var items = [];
       for (var i = data.data.Deaths.length - 1; i >= 0; i--) {
           items.push("<div class='col s12 '><div class='card horizontal'><div class='card-stacked'><div class='card-content'>"+
-          "<p><h4>"+data.data.Deaths[i].year+"</h4>"+ data.data.Deaths[i].text +"</p></div><div class='card-action'>"+
-         "<a href='#' class='right' onclick=\"window.plugins.socialsharing.share('"+data.data.Deaths[i].year , data.data.Deaths[i].text+"');\" ><i class='far fa-share-square fa-2x'></i></a>"+
+          "<p>"+data.data.Deaths[i].year+"-"+ data.data.Deaths[i].text +"</p></div><div class='card-action'>"+
+         "<a href='#' class='right' onclick=\"window.plugins.socialsharing.share('"+data.data.Deaths[i].year , data.data.Deaths[i].text+"');\" ><i class='far fa-share-square'></i></a>"+
          "</div></div></div></div>"
          );
 
@@ -105,3 +105,34 @@ $(".overlay").show();
       });
 
 });
+
+
+
+
+ var d = new Date(),
+    days = [ 'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'],
+    day = days[d.getDay()],
+    
+    months = ['January',
+'February',
+'March',
+'April',
+'May',
+'June',
+'July',
+'August',
+'September',
+'October',
+'November',
+'December'],
+    month = months[d.getMonth()],
+    date = d.getDate()
+    var timestamp = day+', '+month+' '+date;
+    
+    document.getElementById("datetime").innerHTML=timestamp;

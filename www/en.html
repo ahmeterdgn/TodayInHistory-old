@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>TodayInHistory</title>
+
+    </head>
+    <body >
+    
+  <nav>
+  <a href="#!" class="brand-logo" style="font-size: 25px;" >TIH</a>
+      <a href="tr.html" class="sidenav-trigger right list tr"> <img src="img/tr.png" height="50"> </a>
+
+    </nav>
+
+ <ul id="tabs-swipe-demo" class="tabs">
+    <li class="tab col s3" ><a href="#" id="Events">Events</a></li>
+    <li class="tab col s3" ><a href="#" id="Birthdays">Birthdays</a></li>
+    <li class="tab col s3" ><a href="#" id="Death">Death</a></li>
+  </ul>
+
+  <div style="padding-left: 10px;">
+           <h5 id="datetime"></h5>
+            </div>
+  <div>
+
+
+
+
+
+
+
+
+    </div>
+ <div class="overlay">
+  <div class="overlayDoor"></div>
+  <div class="overlayContent">
+    <div class="loader">
+      <div class="inner"></div>
+    </div>
+  </div>
+</div>
+
+<div class="tarih">
+              
+            </div>
+        <span id="result"></span>
+
+          
+      <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/api.js"></script>
+        <script type="text/javascript" src="js/all.js"></script>
+        <script type="text/javascript" src="js/https.js"></script>
+
+<script type="text/javascript">
+        
+var instance = M.Tabs.init(el, options);
+
+
+  $(document).ready(function(){
+    $('.tabs').tabs();
+  });
+        
+</script> 
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
